@@ -54,8 +54,6 @@ pipeline {
         }
 
         stage('Deploy') {
-            when {
-                branch 'master'
             }
             steps {
                 bat 'docker compose up -d'
