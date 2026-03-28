@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/telemetry")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3001")
 public class TelemetryController {
 
     private final TelemetryService telemetryService;
