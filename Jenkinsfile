@@ -17,7 +17,7 @@ pipeline {
         stage('Build Java Backend') {
             steps {
                 dir('backend') {
-                    sh 'mvn clean package -DskipTests'
+                    bat 'mvn clean package -DskipTests'
                 }
             }
         }
@@ -25,7 +25,7 @@ pipeline {
         stage('Run Unit Tests') {
             steps {
                 dir('backend') {
-                    sh 'mvn test'
+                    bat 'mvn test'
                 }
             }
             post {
@@ -39,7 +39,7 @@ pipeline {
         stage('Build Python Service') {
             steps {
                 dir('ml-service') {
-                    sh 'pip install -r requirements.txt'
+                    bat 'pip install -r requirements.txt'
                 }
             }
         }
@@ -47,18 +47,18 @@ pipeline {
         stage('Build Frontend') {
             steps {
                 dir('frontend') {
-                    sh 'npm install'
-                    sh 'npm run build'
+                    bat 'npm install'
+                    bat 'npm run build'
                 }
             }
         }
 
         stage('Deploy') {
             when {
-                branch 'main'
+                branch 'master'
             }
             steps {
-                sh 'docker compose up -d'
+                bat 'docker compose up -d'
                 echo 'Deployed successfully'
             }
         }
