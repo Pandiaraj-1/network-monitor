@@ -17,6 +17,8 @@
 Ingests real-time telemetry from network devices, detects anomalies using ML,
 visualizes topology as a graph, and presents everything through a live NOC-style dashboard.
 
+Works when Project is running
+
 • [📖 API Docs](http://localhost:8080) • [🤖 ML Docs](http://localhost:5000/docs) • [🌐 Dashboard](http://localhost:3000) • [🗺️ Neo4j Graph](http://localhost:7474) •
 
 </div>
