@@ -354,18 +354,6 @@ pytest tests/ -v
 
 ---
 
-## 🗺️ Roadmap
-
-- [ ] Add JWT authentication to all API endpoints
-- [ ] Deploy to AWS EC2 with Kubernetes orchestration
-- [ ] Add Grafana + Prometheus for infrastructure monitoring
-- [ ] Implement LSTM-based time-series anomaly detection
-- [ ] Add email/SMS alerting when anomaly threshold is exceeded
-- [ ] Multi-tenant support (multiple network environments)
-- [ ] Export anomaly reports as PDF
-
----
-
 ## 🔑 Design Decisions
 
 **Why Kafka instead of direct HTTP between services?**
@@ -402,10 +390,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-<div align="center">
 
-**⭐ Star this repo if you found it useful!**
-
-Built by [Pandiaraj M](https://github.com/Pandiaraj-1)
-
-</div>
