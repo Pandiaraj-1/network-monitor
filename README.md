@@ -144,7 +144,7 @@ uvicorn app:app --reload --port 5000
 cd frontend && npm install && npm start
 ```
 
-That's it! Open http://localhost:3000 🎉
+That's it! Open http://localhost:3001
 
 ### Generate Live Test Data
 
@@ -163,7 +163,7 @@ After 50 events the ML model trains automatically and anomaly detection activate
 ```
 network-monitor/
 │
-├── 🟠 backend/                         # Java Spring Boot
+├──  backend/                         # Java Spring Boot
 │   └── src/main/java/com/netmonitor/
 │       ├── model/                      # JPA entities (Device, TelemetryEvent)
 │       ├── repository/                 # Spring Data repositories
@@ -172,24 +172,24 @@ network-monitor/
 │       ├── kafka/                      # Kafka producer
 │       └── config/                     # App configuration
 │
-├── 🐍 ml-service/                      # Python FastAPI
+├──  ml-service/                      # Python FastAPI
 │   ├── anomaly_detector.py             # Isolation Forest model class
 │   ├── app.py                          # FastAPI app + Kafka consumer thread
 │   ├── requirements.txt
 │   └── tests/                          # Pytest test suite
 │       └── test_anomaly_detector.py
 │
-├── ⚛️  frontend/                        # React dashboard
+├──   frontend/                        # React dashboard
 │   └── src/
 │       ├── api/api.js                  # Centralized API service
 │       └── components/Dashboard.js     # NOC dashboard component
 │
-├── 📜 scripts/
+├──  scripts/
 │   └── simulate_telemetry.py          # Data simulation with anomaly injection
 │
-├── 🐳 docker-compose.yml              # Full infrastructure definition
-├── 🔧 Jenkinsfile                     # CI/CD pipeline definition
-└── 📖 README.md
+├──  docker-compose.yml              # Full infrastructure definition
+├──  Jenkinsfile                     # CI/CD pipeline definition
+└──  README.md
 ```
 
 ---
@@ -374,7 +374,7 @@ Device metadata is queried on every dashboard refresh but changes rarely. Redis 
 
 | Service | URL |
 |---|---|
-| React Dashboard | http://localhost:3000 |
+| React Dashboard | http://localhost:3001 |
 | Spring Boot API | http://localhost:8080 |
 | ML Service | http://localhost:5000 |
 | FastAPI Docs | http://localhost:5000/docs |
