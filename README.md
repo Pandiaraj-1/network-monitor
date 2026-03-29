@@ -27,7 +27,7 @@ visualizes topology as a graph, and presents everything through a live NOC-style
 
 | NOC Dashboard | Anomaly Alerts |
 |---|---|
-| ![Dashboard](images/dashboard.png) | ![Anomalies](images/anomalies.png) |
+| ![Dashboard](images/dashboard.png) | 
 
 | Neo4j Topology Graph | Jenkins CI/CD Pipeline |
 |---|---|
