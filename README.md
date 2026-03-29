@@ -25,13 +25,13 @@ visualizes topology as a graph, and presents everything through a live NOC-style
 
 ## 📸 Screenshots
 
-| NOC Dashboard | Anomaly Alerts |
-|---|---|
+| NOC Dashboard |
+|---|
 | ![Dashboard](images/dashboard.png) | 
 
 | Neo4j Topology Graph | Jenkins CI/CD Pipeline |
 |---|---|
-| ![Topology](images/topology.png) | ![Jenkins](images/jenkins.png) |
+| ![Topology](images/topology.png) | ![Jenkins](images/pipeline.png) |
 
 ---
 
