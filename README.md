@@ -29,9 +29,13 @@ visualizes topology as a graph, and presents everything through a live NOC-style
 |---|
 | ![Dashboard](images/dashboard.png) | 
 
-| Neo4j Topology Graph | Jenkins CI/CD Pipeline |
-|---|---|
-| ![Topology](images/topology.png) | ![Jenkins](images/pipeline.png) |
+| Neo4j Topology Graph |
+|---|
+| ![Topology](images/topology.png) |
+
+|Jenkins CI/CD Pipeline |
+|---|
+| ![Jenkins](images/pipeline.png) |
 
 ---
 
