@@ -144,7 +144,7 @@ uvicorn app:app --reload --port 5000
 cd frontend && npm install && npm start
 ```
 
-That's it! Open http://localhost:3001
+That's it! Open http://localhost:3000
 
 ### Generate Live Test Data
 
@@ -374,7 +374,7 @@ Device metadata is queried on every dashboard refresh but changes rarely. Redis 
 
 | Service | URL |
 |---|---|
-| React Dashboard | http://localhost:3001 |
+| React Dashboard | http://localhost:3000 |
 | Spring Boot API | http://localhost:8080 |
 | ML Service | http://localhost:5000 |
 | FastAPI Docs | http://localhost:5000/docs |
